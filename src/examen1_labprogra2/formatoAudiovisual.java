@@ -8,6 +8,9 @@ package examen1_labprogra2;
  *
  * @author denam
  */
-public class formatoAudiovisual {
-    
+public enum formatoAudiovisual {
+    DVD,
+    BLU_RAY
+
 }
+

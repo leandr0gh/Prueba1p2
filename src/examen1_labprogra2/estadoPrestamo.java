@@ -8,6 +8,10 @@ package examen1_labprogra2;
  *
  * @author denam
  */
-public class estadoPrestamo {
-    
+  public enum estadoPrestamo {
+
+    disponible,
+    prestado,
+    reservado
+ 
 }

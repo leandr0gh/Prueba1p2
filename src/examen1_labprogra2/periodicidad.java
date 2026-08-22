@@ -8,6 +8,10 @@ package examen1_labprogra2;
  *
  * @author denam
  */
-public class periodicidad {
-    
+  public enum periodicidad {
+
+    SEMANAL,
+    MENSUAL,
+    ANUAL
+
 }
