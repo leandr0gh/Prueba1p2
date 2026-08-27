@@ -33,6 +33,41 @@ public class MainWindow extends JFrame{
     
     private JPanel crearPanelEntrada(){
     JPanel panel = new JPanel(new GridBagLayout());
+    GridBagConstraints gbc = new GridBagConstraints();
+    gbc.insets = new Insets(5, 5, 5, 5);
+    gbc.fill = GridBagConstraints.HORIZONTAL;
+    gbc.gridx = 0;
+    gbc.gridy = 0;
+    gbc.weightx = 0;
+    panel.add(new JLabel("Ruta de directorio: "),gbc);
+    
+    campoRuta = new JTextField(25);
+    gbc.gridx = 1;
+    gbc.weightx = 1;
+    panel.add(campoRuta,gbc);
+    
+    JButton botonExaminar = new JButton("Examinar");
+    gbc.gridx = 2;
+    gbc.weightx = 0;
+    panel.add(botonExaminar,gbc);
+    
+    gbc.gridx = 1;
+    gbc.gridy = 1;
+    panel.add(new JLabel("Texto para buscar"),gbc);
+    
+    campoBusqueda = new JTextField(25);
+    gbc.gridx = 1;
+    gbc.gridy = 1;
+    gbc.weightx = 1;
+    panel.add(campoBusqueda, gbc);
+    
+    botonAnalizar = new JButton("Analizar");
+    gbc.gridx = 1;
+    gbc.gridy = 2;
+    gbc.weightx = 0;
+    gbc.anchor = GridBagConstraints.CENTER;
+    panel.add(botonAnalizar,gbc);
+    
     return panel;
     }
 }
