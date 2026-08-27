@@ -70,4 +70,13 @@ public class MainWindow extends JFrame{
     
     return panel;
     }
+    
+    private void seleccionarDirectorio(){
+    JFileChooser chooser = new JFileChooser();
+    chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+    int resultado = chooser.showOpenDialog(this);
+        if (resultado == JFileChooser.APPROVE_OPTION) {
+            campoRuta.setText(chooser.getSelectedFile().getAbsolutePath());
+        }
+    }
 }
